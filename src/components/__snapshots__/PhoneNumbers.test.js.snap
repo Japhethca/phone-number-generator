@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PhoneNumbers /> should render successfully 1`] = `
+<div
+  data-css-g7q9rr=""
+>
+  <ol
+    data-css-1j4x2ld=""
+    id="copyNumbers"
+  >
+    <li
+      data-css-r6gsmo=""
+    >
+      0032232152
+    </li>
+    <li
+      data-css-r6gsmo=""
+    >
+      0951119083
+    </li>
+    <li
+      data-css-r6gsmo=""
+    >
+      0987547892
+    </li>
+    <li
+      data-css-r6gsmo=""
+    >
+      0909823787
+    </li>
+    <li
+      data-css-r6gsmo=""
+    >
+      0232447837
+    </li>
+  </ol>
+</div>
+`;

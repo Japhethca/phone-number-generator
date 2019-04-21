@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Generator /> should render successfully 1`] = `
+<div
+  data-css-l68izp=""
+>
+  <div
+    data-css-1ugxpw4=""
+  >
+    <input
+      data-css-1oss144=""
+      maxLength="8"
+      onChange={[Function]}
+      placeholder="size of numbers"
+      required={true}
+      type="number"
+      value={0}
+    />
+    <button
+      data-css-fs9jv2=""
+      id="button"
+      onClick={[Function]}
+    >
+      Generate Numbers
+    </button>
+    <div>
+      <select
+        data-css-1i5es5r=""
+        id=""
+        name="sortOrder"
+        onChange={[Function]}
+      >
+        <option
+          value=""
+        >
+          Sort Order
+        </option>
+        <option
+          value="ASC"
+        >
+          Ascending
+        </option>
+        <option
+          value="DESC"
+        >
+          Descending
+        </option>
+      </select>
+    </div>
+  </div>
+  <div
+    data-css-g7q9rr=""
+  >
+    <ol
+      data-css-1j4x2ld=""
+      id="copyNumbers"
+    />
+  </div>
+</div>
+`;

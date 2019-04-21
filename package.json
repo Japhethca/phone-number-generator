@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
+    "clipboard": "^2.0.4",
     "glamor": "^2.20.40",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -11,9 +13,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --coverage --env=jsdom",
     "eject": "react-scripts eject"
-  }, 
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -22,5 +24,10 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
+    "react-test-renderer": "^16.8.6"
+  }
 }
