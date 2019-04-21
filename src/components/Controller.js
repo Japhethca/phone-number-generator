@@ -1,6 +1,5 @@
 import React from 'react';
 import {css} from 'glamor';
-import Clipboard from 'clipboard';
 
 const controllerStyles = css({
   display: 'flex',
@@ -26,6 +25,7 @@ const inputStyles = css({
   padding: '10px',
   outline: 0,
   border: 0,
+  minWidth: '150px',
   borderRadius: '10px'
 });
 
@@ -53,17 +53,22 @@ export default function Controller({
   const handleInputChange = (event) => setNoOfNumbers(event.target.value);
   return (
     <div {...controllerStyles}>
-      <input {...inputStyles} 
-        type="number"  
-        value={noOfNumbers} 
-        onChange={handleInputChange}
-        placeholder="size of numbers"
-        maxLength="8"
-        required
-      />
-      <button id="button" {...buttonStyles} onClick={() => getOrGenerateNumbers(noOfNumbers)}>
-        Generate Numbers
-      </button>
+      <form onSubmit={(e) => {
+          e.preventDefault();
+          getOrGenerateNumbers(noOfNumbers);
+        }}>
+        <input {...inputStyles} 
+          type="number"  
+          value={noOfNumbers} 
+          onChange={handleInputChange}
+          placeholder="size of numbers"
+          max="10000"
+          min="0"
+        />
+        <button id="button" {...buttonStyles}>
+          Generate Numbers
+        </button>
+      </form>
       <div>
         <select onChange={selectChange} name="sortOrder" id="" {...sortOrderSelectStyles}>
           <option value="">Sort Order</option>

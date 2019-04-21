@@ -1,6 +1,6 @@
 import client from './client';
 
-const endpoint = '/numbers'
+const endpoint = '/numbers';
 export function getNumbers(order) {
   const endpointWithQuery = order ? `${endpoint}?order=${order}` : endpoint;
   return client.get(endpointWithQuery)

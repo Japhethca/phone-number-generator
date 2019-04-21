@@ -28,8 +28,8 @@ describe('<Controller />', () => {
 
   it('should generate numbers when button is clicked', () => {
     const { component } = getComponent();
-    const button = component.find('button');
-    button.simulate('click');
+    const form = component.find('form');
+    form.simulate('submit');
     expect(props.generateNumbers).toHaveBeenCalledWith(props.noOfNumbers);
   });
 
@@ -39,8 +39,8 @@ describe('<Controller />', () => {
       noOfNumbers: 0,
     };
     const { component } = getComponent(newProps);
-    const button = component.find('button');
-    button.simulate('click');
+    const form = component.find('form');
+    form.simulate('submit');
     expect(props.getNumbers).toHaveBeenCalled();
   });
 
