@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { css } from 'glamor';
+
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+
+css.global('html,body', {
+  padding: 0,
+  margin: 0,
+  backgroundColor: '#ffe4c4',
+  fontFamily: 'ubuntu, serif',
+});
 
 ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
