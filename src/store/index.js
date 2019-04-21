@@ -45,11 +45,6 @@ export const initState = (initialstate) => initialState;
 export function reducer(state=initialState, action) {
   switch (action.type) {
     case GET_NUMBERS :
-      return {
-        ...state,
-        numbers: action.payload,
-        isFetchingNumbers: false,
-      };
     case GENERATE_NUMBERS: 
       return {
         ...state,

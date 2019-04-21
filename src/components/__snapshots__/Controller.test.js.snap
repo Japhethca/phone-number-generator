@@ -4,22 +4,25 @@ exports[`<Controller /> should render successfully 1`] = `
 <div
   data-css-1ugxpw4=""
 >
-  <input
-    data-css-1oss144=""
-    maxLength="8"
-    onChange={[Function]}
-    placeholder="size of numbers"
-    required={true}
-    type="number"
-    value={10}
-  />
-  <button
-    data-css-fs9jv2=""
-    id="button"
-    onClick={[Function]}
+  <form
+    onSubmit={[Function]}
   >
-    Generate Numbers
-  </button>
+    <input
+      data-css-s5k5vn=""
+      max="10000"
+      min="0"
+      onChange={[Function]}
+      placeholder="size of numbers"
+      type="number"
+      value={10}
+    />
+    <button
+      data-css-fs9jv2=""
+      id="button"
+    >
+      Generate Numbers
+    </button>
+  </form>
   <div>
     <select
       data-css-1i5es5r=""
