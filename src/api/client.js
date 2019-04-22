@@ -5,7 +5,7 @@ const apiUrl = process.env.NODE_ENV === 'production'
   : 'http://localhost:4000/api/v1/';
   
 const client = axios.create({
-  baseURL: apiUrl,
+  baseURL: 'https://phone-number-generator-api-cj.herokuapp.com/api/v1',
 });
 
 export default client;
